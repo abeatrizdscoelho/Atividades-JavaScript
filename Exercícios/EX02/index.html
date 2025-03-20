@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 02</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Faixa Etária</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de Nascimento
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p> 
+            <p>
+                <input type="button" value="Verificar" onclick="Verificar()">
+            </p>
+        </div>
+        <div id="description">
+            <span></span>
+        </div>
+        <div id="res">
+            <span></span>
+        </div>
+        <ul>
+            Crianças: <span id="contador-crianca">0</span></li>
+            Jovens: <span id="contador-jovem">0</span></li>
+            Adultos: <span id="contador-adulto">0</span></li>
+            Idosos: <span id="contador-idoso">0</span></li>
+        </ul> 
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

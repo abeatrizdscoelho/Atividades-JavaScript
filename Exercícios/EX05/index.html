@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 05</title>
+</head>
+<body>
+    <header>
+        <h1>Média Final</h1>
+    </header>
+    <section>
+        <div>
+            <h3>Digite suas Notas</h3>
+            <p>Atividade Prática em Laboratório
+                <input type="number" id="atv" required>
+            </p> 
+            <p>Prova do Semestre
+                <input type="number" id="prova" required>
+            </p> 
+            <p>Trabalho Teórico
+                <input type="number" id="trabalho" required>
+            </p> 
+            <button onclick="calcularMedia()">Calcular Média</button>
+        </div>
+        <div id="res"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 03</title>
+</head>
+<body>
+    <header>
+        <h1>Cálculo de Frete</h1>
+    </header>
+    <section>
+        <div>
+            <p>Distância em Km
+                <input type="number" id="dist" min="1" required>
+            </p> 
+            <p>Quantidade de Peças 
+                <input type="number" id="qntd" min="1" required>
+            </p>
+            <label for="regiao">Escolha a região:</label>
+            <select id="regiao">
+                <option value="">Selecione...</option>
+                <option value="Sudeste">Sudeste (Região 1)</option>
+                <option value="Sul">Sul (Região 2)</option>
+                <option value="Centro-Oeste">Centro-Oeste (Região 3)</option>
+            </select>
+            <br>
+            <label for="rastreamento">
+                <br>
+                <input type="checkbox" id="rast"> Incluir Rastreamento (R$200,00)
+                <br>
+            </label>
+            <button onclick="calcularFrete()">Calcular Frete</button>
+        </div>
+        <div id="res"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

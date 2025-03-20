@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 04</title>
+</head>
+<body>
+    <header>
+        <h1>Folha de Pagamento</h1>
+    </header>
+    <section>
+        <div>
+            <p>Código
+                <input type="number" id="codigo" required>
+            </p> 
+            <p>Horas Trabalhadas 
+                <input type="number" id="horaTrabalhada" required>
+            </p>
+            <p>Valor da Hora (R$)
+                <input type="number" id="valorHora" required>
+            </p>
+            <label for="turno">Turno de Trabalho</label>
+            <select id="turno">
+                <option value="">Selecione...</option>
+                <option value="Matutino">Matutino</option>
+                <option value="Verspertino">Verspertino</option>
+                <option value="Noturno">Noturno</option>
+            </select>
+            <br>
+            <label for="categoria">Categoria</label>
+            <select id="categoria">
+                <option value="">Selecione...</option>
+                <option value="Gerente">Gerente</option>
+                <option value="Funcionário">Funcionário</option>
+            </select>
+            <br>
+            <button onclick="calcularSalario()">Calcular</button>
+        </div>
+        <div id="res"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
